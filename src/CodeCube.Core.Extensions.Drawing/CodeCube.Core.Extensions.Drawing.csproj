@@ -2,10 +2,28 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <Version>2.0.0-alpha</Version>
+    <!--The package version-->
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Authors>Rob Lohmann</Authors>
+    <Product>CodeCube.Core.Extensions.Drawing</Product>
+    <PackageId>CodeCube.Core.Extensions.Drawing</PackageId>
+    <Description>Basic set of extensions to perform image related actions</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright Rob Lohmann 201</Copyright>
+    <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</RepositoryUrl>
+    <PackageIcon>nuget-icon.png</PackageIcon>
+    <PackageTags>codecube codecube.core output filter whitespace filter validation attributes</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nuget-icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
