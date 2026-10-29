@@ -7,6 +7,7 @@
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <VersionPrefix>3.2.6</VersionPrefix>
   </PropertyGroup>
 
 </Project>

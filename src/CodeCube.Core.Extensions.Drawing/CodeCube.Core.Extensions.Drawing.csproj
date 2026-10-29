@@ -3,10 +3,6 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>2.0.0-alpha</Version>
-    <!--The package version-->
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
     <Authors>Rob Lohmann</Authors>
     <Product>CodeCube.Core.Extensions.Drawing</Product>
     <PackageId>CodeCube.Core.Extensions.Drawing</PackageId>
