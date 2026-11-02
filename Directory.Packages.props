@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'net6.0' And '$(TargetFramework)' != 'net7.0' And '$(TargetFramework)' != 'net8.0'">
-    <PackageVersion Include="System.Drawing.Common" Version="9.0.6" />
+    <PackageVersion Include="System.Drawing.Common" Version="10.0.14" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
