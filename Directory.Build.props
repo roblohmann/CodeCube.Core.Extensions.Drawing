@@ -7,7 +7,7 @@
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core.Extensions.Drawing</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <VersionPrefix>3.2.6</VersionPrefix>
+    <VersionPrefix>3.2.7</VersionPrefix>
   </PropertyGroup>
 
   <!-- NuGet-audit: controleer ook transitieve packages, waarschuw op elk niveau en laat de build falen op high/critical kwetsbaarheden. -->
@@ -17,5 +17,14 @@
     <NuGetAuditLevel>low</NuGetAuditLevel>
     <WarningsAsErrors>$(WarningsAsErrors);NU1903;NU1904</WarningsAsErrors>
   </PropertyGroup>
+
+  <!-- System.Drawing.Common werkt sinds .NET 6 alleen op Windows. Markeer de assembly daarom als Windows-only,
+       zodat consumers een CA1416-waarschuwing krijgen op andere platformen en de analyzer hier niet meer per aanroep waarschuwt.
+       netstandard2.1 kent het attribuut niet en wordt overgeslagen. -->
+  <ItemGroup Condition="'$(TargetFramework)' != 'netstandard2.1'">
+    <AssemblyAttribute Include="System.Runtime.Versioning.SupportedOSPlatformAttribute">
+      <_Parameter1>windows</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
 
 </Project>
